@@ -16,12 +16,14 @@
 		// }());
 
 		// document.write(yesterday);
-
-		var a = "Feb 23, 2017";
-		var yesterday = (function(a){
-			var today = new Date();
-			today.setDate(today.getDate()-1);
-			return yesterday;
+		// The Date must be in this format
+		var a = "Feb 15, 2017";
+		var yesterday = (function(){
+		var month = a.substring(0,3);
+		var day = a.substring(4,6);
+		var year = a.substring(8);
+		var strings =(""+ ""+ month + " " + (day-1) + " " +year); 
+		return strings;
 		}());
 
 		document.write(yesterday);
