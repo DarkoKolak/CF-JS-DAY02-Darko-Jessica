@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise_3</title>
+</head>
+<body>
+<script>
+	function ageCalculator(birth_year) {
+			var year = new Date();
+			var currentYear = year.getFullYear();
+			var age = (currentYear - birth_year);
+
+			document.write("Your are either " + age + " or " + (age-1));
+		}
+
+		ageCalculator(2000);
+
+</script>
+</body>
+</html>
