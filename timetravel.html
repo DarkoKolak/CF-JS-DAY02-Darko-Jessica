@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+
+
+		var yesterday = (function(aDate) {
+
+    	var result = new Date(aDate);
+
+    	result.setDate(result.getDate()-1);
+
+    	return result; 
+
+    	})("Feb 23, 2017");
+
+    	document.write(yesterday.toDateString());
+
+
+	</script>
+
+</body>
+</html>
