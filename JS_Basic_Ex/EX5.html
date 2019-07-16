@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EX5</title>
+</head>
+<body>
+<script>
+	function calculate(width, height,depth){
+		var area = width * height;
+		var volume = area * depth;
+		var array = [area,volume];
+
+		return array;
+	}
+
+	var results = calculate(2,7,5);
+	document.write(results[0]);
+	document.write("<br>");
+	document.write(results[1]);
+</script>
+</body>
+</html>
