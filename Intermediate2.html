@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise Intermediate 2</title>
+</head>
+<body>
+
+	<script>
+		
+		function calculate(math, physics, englisch) {
+			if (typeof math === 'number' && typeof physics === 'number' && typeof englisch === 'number') {
+				var sum = math + physics + englisch;
+				var average = sum / 3;
+				var array = [sum, average];
+				return array;
+			}
+			else {
+				document.write("Please write numbers.");
+			}
+		}
+
+		var array = calculate("Hallo",4,5);
+		document.write(array[0]);
+		document.write("<br>");
+		document.write(array[1]);
+
+	</script>
+
+</body>
+</html>
