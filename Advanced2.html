@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Exercise 2</title>
+</head>
+<body>
+
+	<script>
+		
+			
+		// var date = new Date();
+		// var yesterday = (function(){
+		// 	var today = date.setDate(-1);
+		// 	return today;
+
+		// }());
+
+		// document.write(yesterday);
+
+		var a = "Feb 23, 2017";
+		var yesterday = (function(a){
+			var today = new Date();
+			today.setDate(today.getDate()-1);
+			return yesterday;
+		}());
+
+		document.write(yesterday);
+
+
+	</script>
+
+</body>
+</html>
